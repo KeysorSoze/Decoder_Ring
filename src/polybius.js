@@ -34,7 +34,7 @@ function polybius(input, encode = true) {
     } else {
         //Start by making number pairs
         pairs = [];
-        //ensure input is an even number before pairing
+        //ensure input is an even number before pairing 
         if (input.length % 2 !== 0) {
             return false;
         }
