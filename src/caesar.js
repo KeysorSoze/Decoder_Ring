@@ -13,9 +13,9 @@ function caesar(input, shift = 0, encode = true) {
 
                 //will set shift by either encode or decode
                 if (encode) {
-                    adjustedLetter = +place + shift
+                    adjustedLetter = +place + shift;
                 } else {
-                    adjustedLetter = +place - shift
+                    adjustedLetter = +place - shift;
                 }
 
                 //shift letter

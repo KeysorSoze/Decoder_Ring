@@ -32,4 +32,8 @@ describe('polybius', () => {
         const encoded = polybius('4422644', false);
         expect(encoded).to.eql(false);
     });
+    it("should encode message", () => {
+        const encoded = polybius('message');
+        expect(encoded).to.eql('23513434112251');
+    });
 });

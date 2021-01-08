@@ -1,4 +1,4 @@
-const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const alpha = 'abcdefghijklmnopqrstuvwxyz';
 
 function substitution(input, key, encode = true) {
     if (verifyKey(key) === false) {
@@ -10,8 +10,8 @@ function substitution(input, key, encode = true) {
             if (char === ' ') {
                 result += char;
             }
-            for (letter in alphabet) {
-                if (char === alphabet[letter]) {
+            for (letter in alpha) {
+                if (char === alpha[letter]) {
                     result += key[letter];
                     continue;
                 }
@@ -22,9 +22,9 @@ function substitution(input, key, encode = true) {
             if (char === ' ') {
                 result += char;
             }
-            for (letter in alphabet) {
+            for (letter in alpha) {
                 if (char === key[letter]) {
-                    result += alphabet[letter];
+                    result += alpha[letter];
                     continue;
                 }
             }

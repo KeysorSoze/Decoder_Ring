@@ -1,10 +1,10 @@
 const expect = require('chai').expect;
 const substitution = require('../src/substitution.js');
 
-const key = ['k', 'y', 'd', 'n', 'b', 't', 'e', 'f', 'g', 'h', 'i', 'j', 'l', 'a', 'p', 'r', 's', 'c', 'u', 'v', 'w', 'x', 'z', 'q', 'o', 'm'];
-const badKey1 = ['k', 'y', 'd', 'n', 'b', 't', 'e', 'f', 'g', 'h', 'i', 'j', 'l', 'a', 'p', 'r', 's', 'c', 'u', 'v', 'w', 'x', 'z', 'q', 'o', 'z'];
-const badKey2 = ['b', 'a', 'd', ' ', 'k', 'e', 'y', 'yikes'];
-const noKey = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const key = 'kydnbtefghijlaprscuvwxzqom';
+const badKey1 = 'kydnbtefghijlaprscuvwxzqoz';
+const badKey2 = 'bad key yikes';
+const noKey = 'abcdefghijklmnopqrstuvwxyz';
 
 
 // Write your tests here!
